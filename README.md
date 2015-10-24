@@ -13,4 +13,4 @@ The final processing for step 5 is achieved via split and sapply, with some colu
 
 ## Output
 
-Finally, the processed dataset of step 5 is output to the console. That is: "the average of each variable for each activity and each subject". Columns specify the groupings (either an activity label or a subject number) and rows represent the measurement variable that the mean was calculated over. This can easily be reversed with t().
+Finally, the processed dataset of step 5 is output to the console. That is: "the average of each variable for each activity and each subject". Columns specify the groupings (either an activity label or a subject number) and rows represent the measurement variable that the mean was calculated over (that is, the mean() and std() of the measurements as described in "features_info.txt"). The rows/columns can easily be reversed with t() to suit preference.
