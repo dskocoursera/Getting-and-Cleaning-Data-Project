@@ -12,8 +12,8 @@ rm(list = ls())
 # dataType - either "train" or "test"
 #return:
 # the single dataframe with all the relevant data for the assignment
-loadDataSet <- function(dataType) {
-
+loadAndProcessDataSet <- function(dataType) {
+    
     #build filepaths and load the dataset
     dataDirectory <- "UCI HAR Dataset/"
     xPath <- paste(dataDirectory, dataType, "/X_", dataType, ".txt", sep= "")
@@ -49,8 +49,8 @@ loadDataSet <- function(dataType) {
 }
 
 #load training and test data and combine into single data frame with 
-trainingData <- loadDataSet("train")
-testData <- loadDataSet("test")
+trainingData <- loadAndProcessDataSet("train")
+testData <- loadAndProcessDataSet("test")
 combinedData = rbind(trainingData, testData)
 
 #split the dataset by the activity label, and by the subject. Calculate means and combine into one dataframe
