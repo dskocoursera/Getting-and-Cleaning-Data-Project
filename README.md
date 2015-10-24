@@ -13,4 +13,4 @@ The final processing for step 5 is achieved via split and sapply, with some colu
 
 ## Output
 
-Columns specify the groupings (either an activity label or a subject number) and rows represent the measurement that the mean was calculated over. This can easily be reversed with t().
+Finally, the processed dataset of step 5 is output to the console. Columns specify the groupings (either an activity label or a subject number) and rows represent the measurement that the mean was calculated over. This can easily be reversed with t().
